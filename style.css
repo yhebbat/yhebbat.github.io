@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header
+{
+    background-color: #e9c46a;
+    width: 100%;
+    position: fixed; /* to dont be hided if i scroll */
+    z-index: 9999; /* hight number to stay in the front */
+    display: flex; /* to let all elements in one line*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 15%;
+}
+
+.logo
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #264653;
+    font-size: 1.8em;
+}
+
+.navigation a
+{
+    text-decoration: none;
+    font-weight: 500;
+    color: #264653;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+.navigation a:hover
+{
+    /* text-decoration: underline; */
+    font-weight: 600;
+    /* color: #416c7d; */
+    font-size: 1.4em;
+    padding-left: 30px;
+}
+
+section
+{
+    padding: 100px 200px;
+}
+.main
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(images/BiosBG.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+.presentation
+{
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.presentation span
+{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #e39964;
+}
+.presentation a
+{
+    color: #e39964;
+    text-decoration: none;
+}
+.presentation a:hover
+{
+    text-decoration: underline;
+}
+.main h3
+{
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn
+{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.5em;
+    background-color: #e39964;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.9em 2em;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transition: 0.7s ease;
+}
+.main-btn:hover
+{
+    background-color: #e9c46a;
+    color: #264653;
+    transform: scale(1.1);
+}
+.social-icons
+{
+    margin-left: 60px;
+}
+.social-icons a
+{
+    color: #ffffff;
+    font-size: 1.4em;
+    padding-right: 13px;
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    color: #264653;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card a
+{
+    text-decoration: none;
+}
+.card
+{
+    background-color: #ffffff;
+    width: 21.21em;
+    box-shadow: 0 5px 25px  rgba(1, 1, 1, 25%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover
+{
+    transform: scale(1.1);
+}
+.icon
+{
+    color: #264653;
+    font-size: 6em;
+    text-align: center;
+}
+.info
+{
+    color: #264653;
+    text-align: center;
+}
+.info h3
+{
+    font-size: 1.2em;
+
+}
+.projects-btn
+{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.5em;
+    background-color: #264653;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 0.9em 2em;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.7s ease;
+}
+.projects-btn:hover
+{
+    background-color: #264653;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+.resume
+{
+    background-color: #e9c46a;
+    color: #264653;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.contact
+{
+    background-color: #264653;
+}
+.contact-title
+{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.contact .icon 
+{
+    color: #264653;
+    font-size: 4em;
+    text-align: center;
+}
+.contact .info p
+{
+    font-size: 1.5em;
+}
+.footer
+{
+    background-color: #020608;
+    color: #ffffff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer span
+{
+    color: #e9c46a;
+}
+/* .form-style-2
+{
+    max-width: 100%;
+	padding: 10px 12px 10px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+form span
+{
+    padding: 10px;
+}
+.form-style-2-heading
+{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.form-style-2 label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.form-style-2 span.required{
+	color:red;
+}
+.form-style-2 input.input-field, .form-style-2 .select-field,.form-style-2 .tel-number-field{
+	width: 20%;	
+}
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+ .form-style-2 .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+	border: 1px solid #0C0;
+}
+.form-style-2 .textarea-field{
+	height:100px;
+	width: 55%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #e9c46a;
+	color: #264653;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+	background: #e9c46a;
+	color: #264653;
+} */
+@media (max-width:1023px) {
+    header{
+        padding: 12px 20px;
+        justify-content: space-around;
+
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.5em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column ;
+        align-items: center ;
+    }
+}
+
+@media (max-width:641px) {
+    body{
+        font-size: 12px;
+    }
+    header{
+        padding: 12px 10px;
+    }
+    .navigation a{
+        padding-left: 5px;
+    }
+    .main h2{
+        font-size: 0.8em;
+    }
+    .main h3{
+        font-size: 1.4em
+    }
+    
+}
+@media (max-width:300px) {
+    body{
+        font-size: 10px ;
+    }
+}
